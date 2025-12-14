@@ -1,0 +1,117 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header h1 {
+  text-align: center;
+  color: #007bff;
+  margin: 30px 0 10px 0;
+}
+
+.back-btn {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.back-btn a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.back-btn a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 0 auto 50px auto;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+  transition: color 0.3s ease;
+  line-height: 1;
+}
+
+.toggle-password:hover {
+  color: #007bff;
+}
+
+button.action-btn {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button.action-btn:hover {
+  background-color: #0056b3;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}

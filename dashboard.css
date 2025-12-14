@@ -1,0 +1,52 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header h2 {
+  text-align: center;
+  margin: 30px 0;
+  color: #007bff;
+}
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+  padding: 0 20px 40px 20px;
+}
+
+.dashboard-card {
+  background-color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-card.logout {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .dashboard-card {
+    padding: 25px 10px;
+    font-size: 1rem;
+  }
+}

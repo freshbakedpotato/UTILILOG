@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #002b36;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.scanner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 90%;
+  max-width: 1100px;
+  padding: 20px;
+}
+
+.left-panel {
+  flex: 1;
+  text-align: center;
+}
+
+.left-panel h2 {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.tip-box {
+  background-color: #6b7d07;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: #fffbd5;
+}
+
+.scanner-box {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 2px solid #00bcd4;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+.right-panel {
+  flex: 1;
+  background-color: rgba(0, 188, 212, 0.05);
+  border: 1px solid #00bcd4;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.right-panel h3 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.steps .step {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: #e0f7fa;
+  display: flex;
+  align-items: center;
+}
+
+.steps .step span {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  margin-right: 10px;
+  text-align: center;
+  background-color: #002b36;
+  border: 1px solid #00bcd4;
+  border-radius: 50%;
+  color: #00bcd4;
+  font-weight: bold;
+}
+
+.btn-return {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #002b36;
+  border: 1px solid #00bcd4;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #00bcd4;
+  transition: all 0.3s ease;
+}
+
+.btn-return:hover {
+  background: #00bcd4;
+  color: #fff;
+}
+
+
+@media (max-width: 1024px) {
+  .scanner-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .scanner-box {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .scanner-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .scanner-box {
+    width: 220px;
+    height: 220px;
+  }
+
+  .steps .step {
+    font-size: 0.85rem;
+  }
+
+  .btn-return {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #032733;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  text-align: right;
+  padding: 15px 30px;
+}
+header .top-links a {
+  color: #b8d8e0;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: 600;
+}
+header .top-links a:hover {
+  color: #00bcd4;
+}
+
+.main-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 80px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.logo-title {
+  text-align: center;
+  max-width: 400px;
+}
+.logo-title img {
+  width: 220px;
+  margin-bottom: 15px;
+  -webkit-user-drag: none;
+}
+.logo-title h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.logo-title p {
+  font-size: 1.1rem;
+  color: #b8d8e0;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+}
+
+.error {
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  text-align: left;
+  font-size: 0.9rem;
+  margin-bottom: -8px;
+  color: #b8d8e0;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #b8d8e0;
+  background: transparent;
+  color: #00bcd4;
+  font-size: 1rem;
+  resize: none;
+}
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #00bcd4;
+}
+
+button {
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #00bcd4;
+  color: #fff;
+  font-weight: 600;
+  width: 100%;
+}
+.btn-primary:hover {
+  background: #0097a7;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #00bcd4;
+  font-weight: 600;
+  width: 100%;
+}
+.btn-secondary a {
+  display: block;
+  text-decoration: none;
+  color: #00bcd4;
+  font-weight: 600;
+  width: 100%;
+}
+.btn-secondary:hover {
+  background: #00bcd4;
+}
+.btn-secondary:hover a {
+  color: #fff;
+}
+
+.divider {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b8d8e0;
+  font-size: 0.9rem;
+}
+.divider span {
+  padding: 0 10px;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.1rem;
+  color: #00bcd4;
+}
+
+.toggle-password:hover {
+  color: #0097a7;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #b8d8e0;
+  padding: 15px 0;
+}
+footer p {
+  margin: 5px 0;
+}
+
+@media (max-width: 1024px) {
+  .main-layout {
+    gap: 40px;
+  }
+  .logo-title img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+  .logo-title img {
+    width: 160px;
+  }
+  .logo-title h1 {
+    font-size: 2rem;
+  }
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    text-align: center;
+  }
+  .logo-title img {
+    width: 140px;
+  }
+  .logo-title h1 {
+    font-size: 1.6rem;
+  }
+  .logo-title p {
+    font-size: 0.9rem;
+  }
+  .container {
+    padding: 20px;
+  }
+  input {
+    font-size: 0.9rem;
+  }
+  button {
+    font-size: 0.9rem;
+  }
+}
